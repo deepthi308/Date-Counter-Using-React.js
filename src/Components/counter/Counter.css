@@ -1,0 +1,75 @@
+:root {
+  --purple_light: rgb(255, 235, 255);
+  --purple_dark: purple;
+}
+
+.counter {
+  height: 18rem;
+  width: 33rem;
+  background-color: var(--purple_dark);
+  color: var(--purple_light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 1px black;
+  font-size: 1.1rem;
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  flex: 0.2;
+}
+
+input[type="range"] {
+  flex: 0.7;
+}
+
+.range_no {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.count .add {
+  flex: 0.2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+input[type="text"] {
+  flex: 0.6;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: var(--purple_dark);
+  font-size: 1.2rem;
+}
+
+.count .sub {
+  flex: 0.2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+p {
+  text-align: center;
+}
