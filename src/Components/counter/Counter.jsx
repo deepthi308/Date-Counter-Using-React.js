@@ -56,7 +56,7 @@ const Counter = () => {
       </section>
       {count === 0 && <p>{`Today is ${date}`}</p>}
       {count > 0 && <p>{`${count} days after today is ${date}`}</p>}
-      {count < 0 && <p>{`${count} days ago is ${date}`}</p>}
+      {count < 0 && <p>{`${Math.abs(count)} days ago is ${date}`}</p>}
     </main>
   );
 };
